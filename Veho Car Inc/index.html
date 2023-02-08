@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veho Car Inc</title>
+    <link rel="stylesheet" href="vehostyle.css" />
+</head>
+<body>
+    <header>
+        <div class = "logo">
+            <img src ="vego.png" alt="Company Logo"/>
+        </div>
+        <h2>VEHO CARS</h2>
+    </header>
+    <br/>
+    <div class = "car-form">
+    <form id="vehocarform" action="#" method="get">
+        <h3>Car Finder</h3>
+      <label for="manufacturer">Manufacturer:</label>
+        <select id="manufacturer" multiple>
+          <option value="Toyota">Toyota</option>
+          <option value="Ford">Ford</option>
+          <option value="BMW">BMW</option>
+          <option value="Mercerdes">Mercerdes</option>
+          <option value="Hyundai">Hyundai</option>
+          <option value="Kia">Kia</option>
+        </select>
+        <br/>
+
+        <label for="Bodystyle">Body Style:</label><br/>
+        <select id="Bodystyle" multiple>
+          <option value="Sedan">Sedan</option>
+          <option value="SUV">SUV</option>
+          <option value="Hatchback">Hatchback</option>
+          <option value="Wagon">Wagon</option>
+          <option value="Minivan">Minivan</option>
+          <option value="Pickup Truck">Pickup Truck</option>
+        </select><br/><br/>
+
+        <fieldset>
+            <Legend>Select drivetrain</Legend>
+          <input
+          type="checkbox"
+          id="four-wheel drive"
+          name="drivetrain"
+          value="four-wheel drive"
+          />
+          <label for="fourwheeldrive">four-wheel drive</label><br/>
+          <input
+          type="checkbox"
+          id="all-wheel drive"
+          name="drivetrain"
+          value="all-wheel drive"
+          />
+          <label for="allwheeldrive">all-wheel drive</label><br/>
+
+          <input
+          type="checkbox"
+          id="front-wheel drive"
+          name="drivetrain"
+          value="front-wheel drive"
+          />
+          <label for="rearwheeldrive">rear-wheel drive</label><br/>
+
+          <input
+          type="checkbox"
+          id="rear-wheel drive"
+          name="drivetrain"
+          value="rear-wheel drive"
+          />
+          <label for="frontwheeldrive">front-wheel drive</label> 
+        </fieldset>
+        <br/> 
+
+        <div class="spacing">
+        <fieldset>
+        <legend>Additional infomation</legend>
+        <label for="boxColor">Color:
+            <input type="color" id="boxColor" name="boxColor" />
+            </label>
+
+        <label for = "Mileage">Mileage:</label>
+        <input id="Mileage" name="Mileage" type="text" pattern="[0-9]*" size="10">
+        
+        <label for ="licenseNumber">License:</label>
+        <input
+          type="text"
+          id="licenseNumber"
+          name="licenseNumber"
+          size="10">
+          <br/><br/>
+          <label for="customerComments">
+          Additional comments:<br>
+            <textarea
+              id="customerComments"
+              name="customerComments"
+              placeholder="comments" >
+            </textarea>
+          </label>
+        </fieldset>
+    </div>
+          <br/>
+          <input type="submit" id="process" />
+    </form>
+</div>
+</body>
+</html>
